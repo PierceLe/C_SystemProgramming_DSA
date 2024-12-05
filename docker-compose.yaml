@@ -1,0 +1,6 @@
+services:
+  ubuntu:
+    image: ubuntu:22.04
+    volumes:
+      - ./root_folder:/home/
+    tty: true
