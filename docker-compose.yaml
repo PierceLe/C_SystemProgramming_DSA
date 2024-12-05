@@ -2,5 +2,5 @@ services:
   ubuntu:
     image: ubuntu:22.04
     volumes:
-      - ./data:/home/
+      - ./root_folder:/home/
     tty: true
