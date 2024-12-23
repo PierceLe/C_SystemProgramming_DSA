@@ -44,8 +44,7 @@ int main()
         }
         printf("\n");
     }
-
-    // Giải phóng bộ nhớ
+    
     for (int i = 0; i <= n_vertex; i++)
     {
         if (edges_list[i] != NULL)
