@@ -48,7 +48,7 @@ int main() {
         int next_row = row + directions[cur_dir][0];
         int next_col = col + directions[cur_dir][1];
 
-        if (next_row < 0 
+        if  (next_row < 0 
                 || next_row >= size 
                 || next_col < 0 
                 || next_col >= size 

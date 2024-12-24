@@ -5,8 +5,7 @@ int main()
 {
     int n_vertex, n_edge;
     printf("Enter number of vertices and edges: \n");
-    scanf("Enter number of vertex %d ", &n_vertex);
-    scanf("Enter number of edges %d ", &n_edge);
+    scanf("%d %d", &n_vertex, &n_edge);
     int** adjacency_matrix = (int**)malloc(n_vertex * sizeof(int*));
     for (int i = 0; i < n_vertex; i++)
     {
