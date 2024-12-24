@@ -4,12 +4,13 @@
 int main()
 {
     int n_vertex, n_edge;
-    printf("Enter number of vertices and edges: ");
-    scanf("%d %d", &n_vertex, &n_edge);
-    int** adjacency_matrix = malloc(n_vertex * sizeof(int));
+    printf("Enter number of vertices and edges: \n");
+    scanf("Enter number of vertex %d ", &n_vertex);
+    scanf("Enter number of edges %d ", &n_edge);
+    int** adjacency_matrix = (int**)malloc(n_vertex * sizeof(int*));
     for (int i = 0; i < n_vertex; i++)
     {
-        adjacency_matrix[i] = malloc(n_edge * sizeof(int));
+        adjacency_matrix[i] = (int*)malloc(n_edge * sizeof(int));
     }
 
     // init all values in the matrix is -1 first
@@ -18,7 +19,6 @@ int main()
         for (int j = 0; j < n_edge; j++)
         {
             adjacency_matrix[i][j] = -1;
-
         }
     }
 
@@ -26,7 +26,7 @@ int main()
     for (int i = 0; i < n_edge; i++)
     {
         int u, v, w;
-        printf("Enter edge and their weighted ");
+        printf("Enter edge and their weighted \n");
         scanf("%d %d %d", &u, &v, &w);
         adjacency_matrix[u][v] = w;
         adjacency_matrix[v][u] = w;
